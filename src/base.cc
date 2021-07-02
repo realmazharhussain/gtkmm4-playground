@@ -1,16 +1,5 @@
 #include <gtkmm/application.h>
-#include <gtkmm/window.h>
-
-class MyWindow : public Gtk::Window
-{
-  public:
-    MyWindow()
-    {
-        set_title("Basic Application");
-        set_default_size(200, 200);
-        set_default_icon_name("text-x-generic");
-    }
-};
+#include <helloworld.h>
 
 int main(int argc, char **argv)
 {
