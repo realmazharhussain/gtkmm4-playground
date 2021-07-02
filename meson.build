@@ -1,7 +1,7 @@
 project('test1', 'cpp',
         version: '0.1.0')
 
-gtkmm_dep = dependency('gtkmm-3.0')
+gtkmm_dep = dependency('gtkmm-4.0')
 gtkmm_inc = include_directories('include')
 
 subdir('src')
