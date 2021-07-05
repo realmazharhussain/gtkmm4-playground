@@ -1,5 +1,5 @@
 #include <gtkmm/application.h>
-#include <buttonWindow.h>
+#include <mainWindow.h>
 
 int main(int argc, char **argv)
 {
@@ -7,5 +7,5 @@ int main(int argc, char **argv)
     
     auto app = Gtk::Application::create("org.gtkmm.examples.base");
 
-    return app->make_window_and_run<ButtonWindow>(argc, argv);
+    return app->make_window_and_run<MainWindow>(argc, argv);
 }

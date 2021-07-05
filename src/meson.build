@@ -1,5 +1,5 @@
-lib_sources = files('buttonWindow.cc')
-main_sources = files('main.cc')
+lib_sources = files('mainWindow.cxx')
+main_sources = files('main.cxx')
 
 libtest1 = library(
 	              'test1', lib_sources,
