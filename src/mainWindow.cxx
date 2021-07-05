@@ -3,23 +3,23 @@
 
 MainWindow::MainWindow()
 :
-m_checkbutton("something")
+m_togglebutton("something")
 {
-        set_title("Pixmap'd Buttons");
+        set_title("Toggle Button");
         // set_default_size(200, 200);
         set_default_icon_name("text-x-generic");
 
-        m_checkbutton.set_margin(10);
-        m_checkbutton.signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::on_checkbutton_toggled));
-        set_child(m_checkbutton);
+        m_togglebutton.set_margin(10);
+        m_togglebutton.signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::on_togglebutton_toggled));
+        set_child(m_togglebutton);
 }
 
 MainWindow::~MainWindow()
 {
 }
 
-void MainWindow::on_checkbutton_toggled()
+void MainWindow::on_togglebutton_toggled()
 {
-    std::cout<< (m_checkbutton.get_active()?"ticked":"unticked")
+    std::cout<< (m_togglebutton.get_active()?"enabled":"disabled")
              << std::endl;
 }

@@ -1,6 +1,6 @@
 #pragma once
 #include <gtkmm/window.h>
-#include <gtkmm/checkbutton.h>
+#include <gtkmm/togglebutton.h>
 #include <gtkmm/image.h>
 #include <gtkmm/label.h>
 #include <gtkmm/box.h>
@@ -13,8 +13,8 @@ class MainWindow : public Gtk::Window
 
   protected:
     // signal handlers
-    void on_checkbutton_toggled();
+    void on_togglebutton_toggled();
 
     // child widgets
-    Gtk::CheckButton     m_checkbutton;
+    Gtk::ToggleButton     m_togglebutton;
 };
